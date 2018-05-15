@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **12** hours spent in total
+Time spent: **13** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -17,12 +17,12 @@ Time spent: **12** hours spent in total
   - [ ] Affected source code: class="comment-reply-link" href="/?replytocom=3#respond" onclick="return addComment.moveForm( &quot;div-comment-3&quot;, &quot;3&quot;, &quot;respond&quot;, &quot;3&quot; )" aria-label="Reply to IsabellaRaymond">Reply</a>
     - [Link 1]) https://klikki.fi/adv/wordpress2.html
 1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Summary: The Vulnerability is in the version number
+    - Vulnerability types: Fingerprinting
+    - Tested in version: 4.2
+    - Fixed in version: In a sense, it has not been fixed because so long as they advertise their version number in any version, a hacker can conduct research on possible exploits for that version. 
+  - [ ] GIF Walkthrough: https://gph.is/2L2rG48
+  - [ ] Steps to recreate: Using your WP scan, it will tell you that there is a vulnerability on the page, because it tells you the version number. Navigate to the page, and you can see the version number at the top.  It is an old version number, indicating a need to update, and alerting us that patches on known exploits will not be in place. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
