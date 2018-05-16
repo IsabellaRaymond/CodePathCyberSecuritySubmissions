@@ -25,13 +25,26 @@ Time spent: **13** hours spent in total
   - [ ] Steps to recreate: Using your WP scan, it will tell you that there is a vulnerability on the page, because it tells you the version number. Navigate to the page, and you can see the version number at the top.  It is an old version number, indicating a need to update, and alerting us that patches on known exploits will not be in place. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+1. (Required) User Enumeration
+  - [ ] Summary: I logged in as admin and made a few new
+users.  They aren't using real emails,
+or real names. When you look at the
+URL, admin is given id=1.
+The second user I create is given id=2
+and so on.
+ This clear ID # correlation is 
+definitely a vulnerability, as in 
+previous class exercises we ourselves
+have been able to exploit URL manipulation
+with id numbers that follow clear patterns. 
+We could use this to determine that those
+users exist, and to potentially get other
+information about them. 
+    - Vulnerability types:user enumeration, possibility for URL manipulation.
+    - Tested in version: 4.2
+    - Fixed in version: Unknown. 
+  - [ ] GIF Walkthrough: https://gph.is/2KqAiQJ
+  - [ ] Steps to recreate: create some users and watch the ID# pattern
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
